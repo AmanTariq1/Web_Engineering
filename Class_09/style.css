@@ -1,0 +1,32 @@
+ .Container{
+    width: 800px;
+    background-color: lightgray;
+    display: flex;
+    align-items: center;
+    border: 10px solid black;
+    
+}
+
+.Header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-bottom: 2px solid #c5a059; /* Golden horizontal line */
+    padding-bottom: 25px;
+    margin-bottom: 45px;
+}
+.img-box{
+    width: 300px;
+}
+.title_box {
+    text-align: left;
+}
+.Contact_box{
+    width: 200px;
+    text-align: right;
+    padding: auto;
+}  
+.main {
+    display: flex;
+    align-items: center;
+}

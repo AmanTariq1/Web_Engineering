@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(135deg, #b3664f 0%, #764ba2 100%);
+    min-height: 100vh;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    background: #ffffff;
+    width: 100%;
+    max-width: 600px;
+    border-radius: 20px;
+    padding: 40px;
+    text-align: center;
+}
+
+.header h1 {
+    color: #b3664f;
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.header .subtitle {
+    color: #4b71a2;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+.image-section {
+    margin: 30px 0;
+}
+
+.profile-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #b3664f;
+}
+.about-section {
+    margin: 30px 0;
+    padding: 25px;
+    background: linear-gradient(135deg, #d8a589 0%, #e4e8eb 100%);
+    border-radius: 15px;
+}
+
+.about-section h2 {
+    color: #333;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.about-section p {
+    color: #0f0404;
+    line-height: 1.8;
+    font-size: 15px;
+}
+
+.about-section strong {
+    color: #975536;
+}
+
+.hobbies-section {
+    margin: 30px 0;
+    padding: 25px;
+    background: linear-gradient(135deg, #d8a589 0%, #e4e8eb 100%);
+    border-radius: 15px;
+}
+
+.hobbies-section h2 {
+    color: #333;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.hobbies-section li{
+    gap: 15px;
+    font-size: 16px;
+   list-style: none;
+}
+
+.website-section {
+    margin: 30px 0;
+}
+
+.website-section h2 {
+    color: #333;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.github-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: #7a2206;
+    color: white;
+    padding: 15px 35px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+footer {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 2px solid #eee;
+}
+footer p {
+    color: #b37321;
+    font-size: 14px;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 30px 20px;
+    }
+
+    .header h1 {
+        font-size: 24px;
+    }
+
+    .profile-img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .hobby-list li {
+        font-size: 14px;
+        padding: 12px 20px;
+    }
+}

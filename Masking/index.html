@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Masking Using CSS</title>
+    <!-- <style>
+      .mask1 {
+     -webkit-mask-image: url(w3logo.png);
+        mask-image: url(w3logo.png);
+        mask-repeat: no-repeat; 
+          mask-position: center;    
+      }
+    </style> -->
+
+    <style>
+p {
+  font-size: 20px;
+  padding: 20px;
+  color: white;
+}
+.mask1 {
+  max-width: 600px;
+  height: 400px;
+  background: url(w3logo.png) no-repeat;
+  -webkit-mask-image: linear-gradient(black, transparent);
+  mask-image: linear-gradient (black, transparent);
+}
+</style>
+  </head>
+  <body>
+<h1>A linear-gradient along with text masking</h1>
+
+<div class="mask1">
+<p>Cinque Terre is a coastal area within Liguria, in the northwest of Italy. It lies in the west of La Spezia Province, and comprises five villages: Monterosso al Mare, Vernazza, Corniglia, Manarola, and Riomaggiore.</p>
+<p>Cinque Terre is a coastal area within Liguria, in the northwest of Italy. It lies in the west of La Spezia Province, and comprises five villages: Monterosso al Mare, Vernazza, Corniglia, Manarola, and Riomaggiore.</p>
+</div>
+
+    <!-- <p>An image with a mask layer image:</p>
+    <img
+      class="mask1"
+      src="../download (1).jfif"
+      alt="MASK"
+      width="600"
+      height="400"
+    />
+
+    <p>Original image:</p>
+    <img
+      src="../download (1).jfif"
+      alt="Cinque Terre"
+      width="600"
+      height="400"
+    /> -->
+  </body>
+</html>

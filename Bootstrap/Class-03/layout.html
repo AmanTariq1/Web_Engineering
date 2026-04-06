@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SoulWP - WordPress Agency</title>
+       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
+    <style>
+        .navbar-custom { background-color: #1a1a4e; }
+        .hero-section { 
+            background: linear-gradient(135deg, #1a1a4e 0%, #2a2a6e 100%); 
+            color: white; 
+            padding-top: 80px;
+            padding-bottom: 140px;
+        }
+        .features-section { margin-top: -80px; padding-bottom: 80px; }
+        .feature-card { transition: transform 0.3s ease; }
+        .feature-card:hover { transform: translateY(-5px); }
+        .btn-primary-custom { 
+            /* background-color:#1a1a4e;  */
+            border: none; 
+            padding: 10px 24px; 
+            font-weight: 600;
+        }
+        .btn-outline-purple {
+            border: 2px solid #6c63ff;
+            color: white;
+            padding: 10px 24px;
+            font-weight: 600;
+            background-color: transparent;
+        }
+        .btn-outline-purple:hover {
+            background-color: #6c63ff;
+            color: white;
+        }
+        .btn-primary-custom:hover { background-color: white; 
+                color: black;}
+
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        .footer {
+            background-color: #000000;
+            color: #ffffff;
+            padding: 60px 0 0 0;
+        }
+
+        .footer h5 {
+            color: #ffffff;
+            font-weight: 700;
+            margin-bottom: 25px;
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .footer p {
+            color: #cccccc;
+            line-height: 1.8;
+            font-size: 0.95rem;
+        }
+
+        .footer-links {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .footer-links li {
+            margin-bottom: 12px;
+            padding-bottom: 12px;
+            border-bottom: 1px solid #333333;
+        }
+
+        .footer-links li:last-child {
+            border-bottom: none;
+        }
+
+        .footer-links a {
+            color: #cccccc;
+            text-decoration: none;
+            transition: color 0.3s;
+            font-size: 0.95rem;
+        }
+
+        .footer-links a:hover {
+            color: #6c63ff;
+        }
+
+        .footer-links i {
+            margin-right: 8px;
+            color: #6c63ff;
+            font-size: 0.8rem;
+        }
+
+        /* Contact Info */
+        .contact-info {
+            margin-bottom: 25px;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 20px;
+        }
+
+        .contact-item i {
+            font-size: 1.5rem;
+            color: #ffffff;
+            margin-right: 15px;
+            width: 30px;
+        }
+
+        .contact-item h6 {
+            color: #ffffff;
+            font-weight: 600;
+            margin-bottom: 5px;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+        }
+        .contact-item p {
+            color: #cccccc;
+            margin: 0;
+            font-size: 0.9rem;
+            line-height: 1.6;
+        }
+        .social-icons {
+            display: flex;
+            gap: 12px;
+            margin-top: 20px;
+        }
+        .social-icons a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 36px;
+            height: 36px;
+            background-color: #333333;
+            color: #ffffff;
+            border-radius: 50%;
+            transition: all 0.3s;
+            text-decoration: none;
+        }
+
+        .social-icons a:hover {
+            background-color: #6c63ff;
+            transform: translateY(-3px);
+        }
+
+        .copyright-bar {
+            background-color: #1a1a1a;
+            color: #cccccc;
+            padding: 20px 0;
+            margin-top: 60px;
+            text-align: center;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            .footer {
+                padding: 40px 0 0 0;
+            }
+            
+            .contact-item {
+                margin-bottom: 25px;
+            }
+        }
+            </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom sticky-top">
+        <div class="container">
+         <a class="navbar-brand" href="#">
+    <img src="../Class-03/soulwp.webp" alt="SoulWP Logo" height="40">
+</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarMenu">
+                <ul class="navbar-nav align-items-center">
+                    <li class="nav-item"><a class="nav-link active" href="#">HOME</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">ABOUT US</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">SERVICES</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Web Development</a></li>
+                            <li><a class="dropdown-item" href="#">SEO Services</a></li>
+                            <li><a class="dropdown-item" href="#">Maintenance</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#">BLOG</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">OUR WORK</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">CONTACT US</a></li>
+                    <li class="nav-item ms-3 d-flex gap-2">
+                        <a class="nav-link p-1" href="#"><i class="bi bi-facebook"></i></a>
+                        <a class="nav-link p-1" href="#"><i class="bi bi-envelope"></i></a>
+                        <a class="nav-link p-1" href="#"><i class="bi bi-linkedin"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-7">
+                    <h1 class="display-5 fw-bold mb-4 lh-base">
+                        WordPress Development &<br>
+                        Support for Service-Based<br>
+                        Businesses
+                    </h1>
+                    <p class="lead mb-4 opacity-75" style="max-width: 520px;">
+                        We build fast, secure, and SEO-friendly WordPress websites designed to generate leads, build trust, and help service-based businesses grow online.
+                    </p>
+                    <div class="d-flex gap-3 flex-wrap">
+                     <a href="#" class="btn btn-outline-purple">GET A FREE CONSULTATION</a>
+                    <a href="#" class="btn btn-outline-purple">VIEW OUR WORK <i class="bi bi-arrow-right ms-1"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="features-section">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="card feature-card h-100 border-0 shadow text-center p-4">
+                        <i class="bi bi-wordpress fs-1 text-primary mb-3"></i>
+                        <h5 class="fw-bold mb-0">WordPress-Focused<br>Expertise</h5>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card feature-card h-100 border-0 shadow text-center p-4">
+                        <i class="bi bi-graph-up-arrow fs-1 text-primary mb-3"></i>
+                        <h5 class="fw-bold mb-0">SEO & Performance<br>Optimized</h5>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card feature-card h-100 border-0 shadow text-center p-4">
+                        <i class="bi bi-shield-check fs-1 text-primary mb-3"></i>
+                        <h5 class="fw-bold mb-0">Secure & Scalable<br>Websites</h5>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card feature-card h-100 border-0 shadow text-center p-4">
+                        <i class="bi bi-headset fs-1 text-primary mb-3"></i>
+                        <h5 class="fw-bold mb-0">Ongoing Support &<br>Maintenance</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+<div style="min-height: 500px; padding: 50px; text-align: center;">
+        <h1>Your Page Content Here</h1>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+                    <h5>ABOUT US</h5>
+                    <p>
+                        SoulWP provides professional WordPress services to help businesses build, 
+                        improve, and manage their websites. We focus on clean design, strong 
+                        performance, and reliable support to help your site grow.
+                    </p>
+                    <div class="social-icons">
+                        <a href="#" title="Facebook"><i class="bi bi-facebook"></i></a>
+                        <a href="#" title="Email"><i class="bi bi-envelope"></i></a>
+                        <a href="#" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+                    <h5>QUICK LINKS</h5>
+                    <ul class="footer-links">
+                        <li><i class="bi bi-chevron-right"></i><a href="#">ABOUT US</a></li>
+                        <li><i class="bi bi-chevron-right"></i><a href="#">SERVICES</a></li>
+                        <li><i class="bi bi-chevron-right"></i><a href="#">OUR WORK</a></li>
+                        <li><i class="bi bi-chevron-right"></i><a href="#">CONTACT US</a></li>
+                        <li><i class="bi bi-chevron-right"></i><a href="#">Privacy Policy</a></li>
+                        <li><i class="bi bi-chevron-right"></i><a href="#">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <h5>CONTACT US</h5>
+                    
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="bi bi-telephone"></i>
+                            <div>
+                                <h6>PHONE</h6>
+                                <p>+92 3488868622</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="bi bi-envelope"></i>
+                            <div>
+                                <h6>EMAIL</h6>
+                                <p>info@soulwp.com</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <i class="bi bi-geo-alt"></i>
+                            <div>
+                                <h6>ADDRESS</h6>
+                                <p>IT Excellence Center<br>Muzaffarabad azad kashmir 13100</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright-bar">
+            <div class="container">
+                <p class="mb-0">Copyright 2026 © soulwp.com</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</html>

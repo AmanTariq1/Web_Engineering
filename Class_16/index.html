@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form in HTML</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="Container">
+        <h2>Novell Services Login</h2>
+        <div class="form-group">
+            <label> Username:</label>
+            <input type="text">
+        </div><br>
+        <div class="form-group">
+            <label> Password:</label>
+            <input type="password">
+        </div><br>
+        <div class="form-group">
+            <label>City of Employment:</label>
+            <input type="text">
+        </div>
+        <div class="form-group">
+            <label>Web server</label>
+            <select>
+                <option value="">-- Choose a server --</option>
+                <option value="">Server: 1</option>
+                <option value="">Server: 2</option>
+            </select>
+        </div>
+    <div class="form-group">
+        <label>Please specify your role:</label>
+    </div>
+    <div class="roles">
+        <label><input type="radio" name="role"> Admin</label>
+        <label><input type="radio" name="role"> Engineer</label>
+        <label><input type="radio" name="role"> Manager</label>
+        <label><input type="radio" name="role"> Guest</label>
+    </div>
+    <div class="form-group">
+        <label>Single Sign-on to the following:</label>
+    </div>
+    <div class="services">
+        <label><input type="checkbox"> Mail</label>
+        <label><input type="checkbox"> Payroll</label>
+        <label><input type="checkbox"> Self-service</label>
+    </div>
+    <div class="buttons">
+        <button>LOGIN</button>
+        <button class="reset">RESET</button>
+    </div>
+    </div>
+</body>
+</html>

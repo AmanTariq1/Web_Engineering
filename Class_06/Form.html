@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms in HTML</title>
+    <link rel="stylesheet" href="Style.css" />
+  </head>
+  <body>
+    <!-- DIV PRACTICE -->
+    <div id="D1">
+      <h2>Contact Us Form</h2>
+      <h4>Don't Hesitate to contact us, We are available 24/7</h4>
+      <form id="Reg_Form">
+        <input type="text" id="F_name" placeholder="First Name" /><br />
+        <input type="text" placeholder="Last Name" /><br />
+        <input type="email" placeholder="Enter your Email" required /><br />
+        <input type="phone" placeholder="Enter Phone" /><br />
+        <br>
+
+        <!-- RADIO BUTTON PRACTICE-->
+        Gender: <br />
+        Male<input type="radio" value="male" name="gender" /> Female<input
+          type="radio"
+          value="female"
+          name="gender"
+        />
+        <br>
+        <br>
+         <!-- Password & Date Practice -->
+        <input type="password" placeholder="Enter your password">
+        <input type="date">
+        <br>
+        <br>
+        
+        <!-- SELECT PRACTICE -->
+        <select >
+            <option value="Pk">PAKISTAN</option>
+            <option value="IR">IRAN</option>
+            <option value="AFG">AFGANISTAN</option>
+            <option value="TURK">TURKEY</option>
+            <option value="CAN">CANADA</option>
+            <option value="SUD ARAB">SAUDIA ARABIA</option>
+        </select>
+        <br>
+        <br>
+        
+        <!-- CHECKBOX PRACTICE -->
+         <H4>Choose Country</H4>
+        <input type="checkbox" name="Hobby" value="Cricket">Cricket
+        <input type="checkbox" name="Hobby" value="Badminton">Badminton
+        <input type="checkbox" name="Hobby" value="Basket Ball">Basket Ball
+        <input type="checkbox" name="Hobby" value="Football">Football
+
+        <br />
+        <br /> 
+        <!-- TEXT AREA PRACTICE -->
+        <textarea name="Address" rows="5"></textarea>
+         <br>
+         <br>
+         Submit Button
+         <input type="submit" value="Submit">
+      </form>
+    </div>
+  </body>
+</html>
